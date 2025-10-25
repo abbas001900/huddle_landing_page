@@ -1,0 +1,208 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(322, 100%, 98%);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayinsh-blue: hsl(208, 11%, 55%);
+    --white: #fff;
+    --call-to-action-background: aliceblue;
+    --heading-font-family: Poppins;
+    --heading-font-weight: 600;
+    --body-font-family: Open Sans;
+    --body-font-weight-normal: 400;
+    --body-font-weight-bold: 700;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/bg-hero-desktop.svg);
+
+    gap: 1.5rem;
+}
+
+header
+{
+    width: 100%;
+    padding: 0 3rem;
+}
+header nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+header nav a
+{
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--white);
+    box-shadow: 0px 1px 3px 2px #00000025;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+main
+{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+section
+{
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 1px 3px 2px #00000009;
+}
+
+div
+{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main img
+{
+    max-width: 50%;
+}
+
+footer
+{
+    background: var(--dark-cyan);
+    color: white;
+    padding: 9rem 1.5rem 1.5rem 1.5rem;
+}
+footer nav ul
+{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    list-style: none;
+    gap: 2rem;
+}
+
+#community
+{
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+}
+
+#community div a
+{
+    max-width: 50%;
+    background: var(--pink);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+#buildCommunity
+{
+    max-height: 5rem;
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+#buildCommunity div
+{
+    max-width: fit-content;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0px 1px 3px 2px #00000009;
+    gap: 2rem;
+}
+#buildCommunity div a
+{
+    background: var(--pink);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+#grid3
+{
+    grid-column: span 1;
+}
+#grid3 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#grid4
+{
+    grid-column: span 3;
+}
+
+#grid2
+{
+    text-decoration: none;
+    grid-column: span 2;
+}
+#grid2 ul li a
+{
+    text-decoration: none;
+    color: var(--white);
+}
+
+#footerCircle
+{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    grid-column: span 4;
+}
+
+.displayVert
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCircle
+{
+    width: 2.5rem;
+    background-color: none;
+    height: 2.5rem;
+    flex-direction: row;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
