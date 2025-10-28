@@ -38,7 +38,11 @@ body
 
 header
 {
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
     width: 100%;
+    min-height: 100vh;
     padding: 1rem 3rem;
     background-image: url(images/bg-hero-desktop.svg);
     background-color: var(--light-pink);
@@ -265,6 +269,13 @@ footer nav ul
 .heading--heading1
 {
     font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+    #footerCircle
+    {
+        grid-column: span 6;
+    }
 }
 
 @media (max-width: 768px) {
